@@ -1,0 +1,14 @@
+{
+  "id": "01",
+  "repo": "agentic-commerce-api-backend",
+  "title": "Commerce REST API Backend",
+  "summary": "FastAPI grocery commerce APIs for products, inventory, pricing, coupons, carts, checkout, orders, health, and metrics.",
+  "copy": [
+    "backend",
+    "pytest.ini",
+    ".env.example"
+  ],
+  "extra_tests": {},
+  "verify": "python3.11 -m pytest backend/tests",
+  "run": "cd backend && python3.11 -m uvicorn app.main:app --reload --port 8000"
+}
